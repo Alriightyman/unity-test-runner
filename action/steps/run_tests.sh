@@ -80,6 +80,7 @@ if [ $EDIT_MODE = true ]; then
       -logFile "$FULL_ARTIFACTS_PATH/editmode.log" \
       -projectPath "$UNITY_PROJECT_PATH" \
       -runTests \
+      -nographics \
       -testPlatform editmode \
       -testResults "$FULL_ARTIFACTS_PATH/editmode-results.xml" \
       $CUSTOM_PARAMETERS
@@ -118,6 +119,7 @@ if [ $PLAY_MODE = true ]; then
       -logFile "$FULL_ARTIFACTS_PATH/playmode.log" \
       -projectPath "$UNITY_PROJECT_PATH" \
       -runTests \
+      -nographics \
       -testPlatform playmode \
       -testResults "$FULL_ARTIFACTS_PATH/playmode-results.xml" \
       $CUSTOM_PARAMETERS
